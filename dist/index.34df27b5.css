@@ -1,0 +1,88 @@
+@import "https://use.typekit.net/orj2orz.css";
+:root {
+  --color-red: #ff8985;
+  --color-blue: #2c4d69;
+  --color-yellow: #dee349;
+  --color-light-blue: #52b2ff;
+  --font-family-titles: "didoni-urw", serif;
+  --font-family: "source-sans-pro", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-bold: 700;
+  --font-size-big: 48pt;
+  --font-size-mid: 18pt;
+  --font-size-small: 14pt;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main, body, html {
+  scroll-snap-type: y mandatory;
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-light);
+  position: relative;
+}
+
+header {
+  z-index: 1000;
+  position: relative;
+}
+
+header > div {
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  display: flex;
+  position: absolute;
+}
+
+header > div:first-child {
+  top: 0;
+  left: 0;
+}
+
+header > div:last-child {
+  top: 0;
+  right: 0;
+}
+
+section, footer {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-family-titles);
+  font-size: var(--font-size-big);
+}
+
+h2, h3, h4, h5, h6 {
+  text-decoration: underline;
+}
+
+.box {
+  padding: 5rem;
+}
+
+.box--red {
+  background-color: var(--color-red);
+}
+
+.box--blue {
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
+.box--red {
+  margin-bottom: -4rem;
+}
+
+.box--blue {
+  margin-left: 3rem;
+}
+
+/*# sourceMappingURL=index.34df27b5.css.map */
